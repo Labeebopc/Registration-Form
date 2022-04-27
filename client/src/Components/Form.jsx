@@ -8,11 +8,11 @@ function Form() {
             <div className="form-row">
                 <div className="form-group col-md-6">
                     <label for="inputfirstname4">First Name</label>
-                    <input type="text" className="form-control" id="inputfirstname4" placeholder="First Name" />
+                    <input name='fname' type="text" className="form-control" id="inputfirstname4" placeholder="First Name" />
                 </div>
                 <div className="form-group col-md-6">
                     <label for="inputlastname4">Last Name</label>
-                    <input type="text" className="form-control" id="inputlastname4" placeholder="Last Name" />
+                    <input name='lname' type="text" className="form-control" id="inputlastname4" placeholder="Last Name" />
                 </div>
             </div>
 
@@ -46,28 +46,28 @@ function Form() {
             <div className="form-row">
                 <div className="form-group col-md-6">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" className="form-control" id="inputEmail4" placeholder="Email" />
+                    <input name='email' type="email" className="form-control" id="inputEmail4" placeholder="Email" />
                 </div>
                 <div className="form-group col-md-6">
                     <label for="inputPassword4">Password</label>
-                    <input type="password" className="form-control" id="inputPassword4" placeholder="Password" />
+                    <input name='password' type="password" className="form-control" id="inputPassword4" placeholder="Password" />
                 </div>
             </div>
             <div className="form-group">
                 <label for="inputAddress">Address</label>
-                <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" />
+                <input name='address1' type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" />
             </div>
             <div className="form-group">
                 <label for="inputAddress2">Address 2</label>
-                <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment" />
+                <input name='address2' type="text" className="form-control" id="inputAddress2" placeholder="Apartment" />
             </div>
             <div className="form-group">
                 <label for="inputAddress2">Address 3</label>
-                <input type="text" className="form-control" id="inputAddress3" placeholder="Studio" />
+                <input name='address3' type="text" className="form-control" id="inputAddress3" placeholder="Studio" />
             </div>
             <div className="form-group">
                 <label for="inputAddress2">Address 4</label>
-                <input type="text" className="form-control" id="inputAddress4" />
+                <input name='address4' type="text" className="form-control" id="inputAddress4" />
             </div>
 
             <div className="form-row">
@@ -77,7 +77,7 @@ function Form() {
                 </div>
                 <div className="form-group col-md-4">
                     <label for="inputState">State</label>
-                    <select id="inputState" className="form-control">
+                    <select name='state' id="inputState" className="form-control">
                         <option selected>Choose...</option>
                         <option>Kerala</option>
                         <option>Tamilnadu</option>
@@ -86,7 +86,7 @@ function Form() {
                 </div>
                 <div className="form-group col-md-2">
                     <label for="inputZip">Zip</label>
-                    <input type="text" className="form-control" id="inputZip" />
+                    <input name='zip' type="text" className="form-control" id="inputZip" />
                 </div>
             </div>
             <button type="submit" className="btn btn-primary">Sign in</button>
