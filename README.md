@@ -9,6 +9,7 @@
                # Client side folder
                       1. Creating app using npx create-react-app
                       2. Designing the form using Bootstrap
+                      3. Using of appropriate npm modules like axios, bcrypt etc..
                # Server side
                       5. Creating routes and models(schema)
                       6. Created a Schema to store new inputs
