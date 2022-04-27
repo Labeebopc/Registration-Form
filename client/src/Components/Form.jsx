@@ -2,16 +2,20 @@ import React from 'react'
 import './Form.css'
 
 function Form() {
+    const handleSignup=(e)=>{
+        e.preventDefault()
+    }
+
     return (
-        <form className='form' method='post'>
+        <form className='form' method='post'onSubmit={handleSignup}>
             <div className="form-content">
             <div className="form-row">
                 <div className="form-group col-md-6">
-                    <label for="inputfirstname4">First Name</label>
+                    <label htmlFor="inputfirstname4">First Name</label>
                     <input name='fname' type="text" className="form-control" id="inputfirstname4" placeholder="First Name" />
                 </div>
                 <div className="form-group col-md-6">
-                    <label for="inputlastname4">Last Name</label>
+                    <label htmlFor="inputlastname4">Last Name</label>
                     <input name='lname' type="text" className="form-control" id="inputlastname4" placeholder="Last Name" />
                 </div>
             </div>
@@ -22,20 +26,20 @@ function Form() {
                     <legend className="col-form-label col-sm-2 pt-0">Gender</legend>
                     <div className="col-sm-10">
                         <div className="form-check">
-                            <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked />
-                            <label className="form-check-label" for="gridRadios1">
+                            <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" />
+                            <label className="form-check-label" htmlFor="gridRadios1">
                                 Male
                             </label>
                         </div>
                         <div className="form-check">
                             <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" />
-                            <label className="form-check-label" for="gridRadios2">
+                            <label className="form-check-label" htmlFor="gridRadios2">
                                 Female
                             </label>
                         </div>
                         <div className="form-check">
                             <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" />
-                            <label className="form-check-label" for="gridRadios3">
+                            <label className="form-check-label" htmlFor="gridRadios3">
                                 Others
                             </label>
                         </div>
@@ -45,38 +49,38 @@ function Form() {
 
             <div className="form-row">
                 <div className="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
+                    <label htmlFor="inputEmail4">Email</label>
                     <input name='email' type="email" className="form-control" id="inputEmail4" placeholder="Email" />
                 </div>
                 <div className="form-group col-md-6">
-                    <label for="inputPassword4">Password</label>
+                    <label htmlFor="inputPassword4">Password</label>
                     <input name='password' type="password" className="form-control" id="inputPassword4" placeholder="Password" />
                 </div>
             </div>
             <div className="form-group">
-                <label for="inputAddress">Address</label>
+                <label htmlFor="inputAddress">Address</label>
                 <input name='address1' type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" />
             </div>
             <div className="form-group">
-                <label for="inputAddress2">Address 2</label>
+                <label htmlFor="inputAddress2">Address 2</label>
                 <input name='address2' type="text" className="form-control" id="inputAddress2" placeholder="Apartment" />
             </div>
             <div className="form-group">
-                <label for="inputAddress2">Address 3</label>
+                <label htmlFor="inputAddress2">Address 3</label>
                 <input name='address3' type="text" className="form-control" id="inputAddress3" placeholder="Studio" />
             </div>
             <div className="form-group">
-                <label for="inputAddress2">Address 4</label>
+                <label htmlFor="inputAddress2">Address 4</label>
                 <input name='address4' type="text" className="form-control" id="inputAddress4" />
             </div>
 
             <div className="form-row">
                 <div className="form-group col-md-6">
-                    <label for="inputCity">City</label>
+                    <label htmlFor="inputCity">City</label>
                     <input type="text" className="form-control" id="inputCity" />
                 </div>
                 <div className="form-group col-md-4">
-                    <label for="inputState">State</label>
+                    <label htmlFor="inputState">State</label>
                     <select name='state' id="inputState" className="form-control">
                         <option selected>Choose...</option>
                         <option>Kerala</option>
@@ -85,11 +89,11 @@ function Form() {
                     </select>
                 </div>
                 <div className="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
+                    <label htmlFor="inputZip">Zip</label>
                     <input name='zip' type="text" className="form-control" id="inputZip" />
                 </div>
             </div>
-            <button type="submit" className="btn btn-primary">Sign in</button>
+            <button type="submit" className="btn btn-primary">Sign Up</button>
             </div>
         </form>
     )
