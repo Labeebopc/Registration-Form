@@ -1,9 +1,25 @@
 import React from 'react'
+import axios from 'axios'
+import { baseUrl } from '../constants/constants'
 import './Form.css'
 
 function Form() {
     const handleSignup=(e)=>{
-        e.preventDefault()
+        e.preventDefault();
+        console.log();
+        axios.post(baseUrl + '/signup', {
+            firstName: e.target.fname.value,
+            lastName: e.target.lname.value,
+            email: e.target.email.value,
+            password: e.target.password.value,
+            address1: e.target.address1.value,
+            address2: e.target.address2.value,
+            address3: e.target.address3.value,
+            address4: e.target.address4.value,
+            city: e.target.city.value,
+            state: e.target.state.value,
+            zip: e.target.zip.value
+        })          
     }
 
     return (
@@ -77,11 +93,11 @@ function Form() {
             <div className="form-row">
                 <div className="form-group col-md-6">
                     <label htmlFor="inputCity">City</label>
-                    <input type="text" className="form-control" id="inputCity" />
+                    <input name='city' type="text" className="form-control" id="inputCity" />
                 </div>
                 <div className="form-group col-md-4">
                     <label htmlFor="inputState">State</label>
-                    <select name='state' id="inputState" className="form-control">
+                    <select defaultValue={'DEFAULT'} name='state' id="inputState" className="form-control">
                         <option selected>Choose...</option>
                         <option>Kerala</option>
                         <option>Tamilnadu</option>
