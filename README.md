@@ -1,4 +1,14 @@
 # Registration-Form
+
+# App conclusion
+      1. In this project, a user can Signup, Login with credentials
+      2. Used React and Bootstrap for building UI
+      3. Used Express on top of NodeJs in backend
+      4. Build API with Express and used these endpoints in the frontend by axios to interact with the backend part
+      5. Used MongoDB as the Nosql database to store data in JSON format
+      6. Integrated JWT, bCrypt for Authentication
+
+
 # Steps used to create the Application
       1. Created a Client side folder & Server side folder
               # Server side folder
