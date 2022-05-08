@@ -4,42 +4,29 @@ import mongoose from 'mongoose'
 const Schema = mongoose.Schema;
 
 export const RegistrationSchema = new Schema({
-    firstName: {
-        type: String,
-        required: 'Enter a first name'
-    },
-    lastName: {
-        type: String
-    },
+   
+    firstName: {type: String},
 
-    // gender: {
-    //     type: radio
-    // },
+    lastName: {type: String},
 
-    email: {
-        type: String
-    },
-    password: {
-        type: String                                     
-    },
-    address1: {
-        type: String
-    },
-    address2: {
-        type: String
-    },
-    address3: {
-        type: String
-    },
-    address4: {
-        type: String
-    },
-    // state: {
-    //     type: String
-    // },
-    zip: {
-        type: number
-    },
+    email: {type: String, required: [true, "Please provide your email"], unique: true},
 
+    password: {type: String, required: true, minlength:6, select: false},
+
+    address1: {type: String, required: [true, "Please provide an address"]},
+
+    address2: {type: String},
+
+    address3: {type: String},
+
+    address4: {type: String},
+
+    state: {type: String, required: [true, "Please provide a state"]},
+
+    country: {type: String, required: [true, "Please provide a country"]},
+
+    zip: {type: Number},
+
+    mobile: {type: Number, required: [true, "Please provide your mobile number"]}
 
 })

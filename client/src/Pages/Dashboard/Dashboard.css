@@ -1,0 +1,8 @@
+.product-list{
+    margin: 20px 40px;
+}
+.btnlogout{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
