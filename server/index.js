@@ -18,7 +18,7 @@ app.use(cors());
 app.use('/api', registrationRoutes)
 
 
-const CONNECTION_URL = process.env.MONGO_URL;
+const CONNECTION_URL = process.env.MONGO_URL || "mongodb://localhost:27017" ;
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology:true})
